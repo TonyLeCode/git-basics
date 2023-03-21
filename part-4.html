@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Learn Git - Part-4</title>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<header>
+			<h2>Final Part</h2>
+			<p>You're almost there!</p>
+			<p>If you're collaborating on a project, you need a remote repository so everyone can work on it.</p>
+			<p>You can create a free repo on <a href="https://github.com/">github</a></p>
+			<p>It should be easy to figure out. It'll even tell you the steps to upload your local repo from the command line.</p>
+			<ol>
+				<li><span class="wrap">git remote add https://github.com/username/your-repo.git</span></li>
+				<li><span class="wrap">git branch -M main</span></li>
+				<li><span class="wrap">git push -u origin main</span></li>
+			</ol>
+			<p>Once you've done this, go back to your project.</p>
+			<p>Go to one of your empty text files and add whatever you want in there. If you don't know what to add you can just add a poem from here <a href="https://www.poetryfoundation.org/poems/poem-of-the-day">https://www.poetryfoundation.org/poems/poem-of-the-day</a></p>
+			<p>But wait! We don't want to commit this to the master branch! Let's make a new branch first.</p>
+			<p>However, if you make a new branch now, your changes will get deleted! So before we make a new branch, type <span class="wrap">git stash</span> This will remove all changes you've made and save them in the "stash."</p>
+			<p>Now, we'll make a new branch <span class="wrap">git checkout -b branch-name</span> Replace branch-name with the name of the branch you want to make. <span class="wrap">checkout</span> will move you to the branch while <span class="wrap">-b</span> will allow you to create a new branch with <span class="wrap">checkout</span>. You can type <span class="wrap">git branch</span> to see which branch you are on.</p>
+			<p>You can now do <span class="wrap">git stash apply</span> to reapply all changes you kept in the stash. Now stage and commit changes.</p>
+			<p>Remember, these changes are not actually pushed to the remote repository. You'll have to push it like this <span class="wrap">git push -u origin branch-name</span> replacing branch-name with the name of your branch. It's only necessary to use <span class="wrap">-u</span> if the branch is not already made.</p>
+			<p>To merge changes to the master branch, you'll have to first switch the branch you want to make changes to <span class="wrap">git checkout master</span></p>
+			<p>Now you can merge with <span class="wrap">git merge branch-name</span> replace branch-name with the branch you want to merge changes from. If you did everything write, your merge should be successful and the changes on the branch should be applied to master branch. Remember that these changes are not pushed to the remote repository. In a real life scenario, you might have merge conflicts, but that's out of the scope of this exercise.</p>
+			<p>Congratulations! Hopefully you got a feel for the basics of git and you're ready to collab!</p>
+		</header>
+	</body>
+</html>

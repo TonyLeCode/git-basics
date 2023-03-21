@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Learn Git - Part-2</title>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<header>
+			<h2>Welcome!</h2>
+			<p>You've made it past the first part.</p>
+			<p
+				>For this second part, open this file <span class="wrap">index.html</span> in a text editor. Look for the set of
+				* where it says "Make changes below!"</p
+			>
+			<p>In "href", place <span class="wrap">part-3.html</span> between the double quotes</p>
+			<p>It should look like this <span class="wrap">href="part-3.html"</span></p>
+			<p>After that, go to the terminal and type <span class="wrap">git status</span></p>
+			<p
+				>You will get a message saying <span class="wrap">Changes not staged for commit:</span> which means you made a
+				change that hasn't been pushed(applied) to the repo. It will list relevant files.</p
+			>
+			<p>To push to the repo, you must go through three steps:</p>
+			<ol>
+				<li
+					>First, you must type <span class="wrap">git add file-name</span>. Replace file-name with the name of file you
+					wish to push to repo. In this case it would be <span class="wrap">git add index.html</span>. If you type
+					<span class="wrap">git status</span> it should now tell you
+					<span class="wrap">Changes to be commited:</span> and list relevant files. Your file is now "staged" for a
+					commit.
+				</li>
+				<li>
+					To commit, you must type <span class="wrap">git commit -m "message"</span>. Replace message with a descriptive
+					message explaining what changes you've made. In this case you can do
+					<span class="wrap">git commit -m "Added link to part 3"</span>
+				</li>
+				<li>
+					Now you've made a commit, but it is only applied locally. You need an extra step if you want to push to a
+					remote repository, but we'll leave that for later.
+				</li>
+			</ol>
+
+			<!-- *************************************************************************************************************** -->
+			<!-- *************************************************************************************************************** -->
+			<!-- Make changes below! -->
+			<p><a href="">Click Here for part 3!</a></p>
+			<!-- Make changes above! -->
+			<!-- *************************************************************************************************************** -->
+			<!-- *************************************************************************************************************** -->
+		</header>
+	</body>
+</html>
